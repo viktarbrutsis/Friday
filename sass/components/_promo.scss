@@ -1,0 +1,35 @@
+.promo {
+    padding: 30px 0 111px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content {
+        padding-right: 67px;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__text {
+        @extend %font-add;
+        @include font($weight: 400, $size: 1.8rem, $height: 2.8rem);
+        letter-spacing: 0.6px;
+        margin-bottom: 45px;
+        color: $color-text;
+    }
+    &__buttons {
+        button {
+            background-color: $color-primary;
+            color: $color-light;
+            margin-right: 44px;
+        }
+    }
+    .link-button {
+        color: $color-link-button;
+        // text-decoration: none;
+        @extend %font-add;
+        display: inline-flex;
+        align-items: center;
+    }
+}

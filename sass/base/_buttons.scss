@@ -1,0 +1,28 @@
+.button {
+    @extend %font-primary;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    padding: 11px 25px 13px;
+    border-radius: 4px;
+    background-color: $color-hovered;
+    color: $color-text;
+    cursor: pointer;
+    // transition: all .6s;
+    @extend %trans-08;
+    margin-left: 14px;
+    &:first-child {
+        margin-left: 0;
+    }
+    &:hover {
+        background-color: $color-primary;
+        border-color: $color-primary;
+        color: $color-light;
+    }
+    &_bordered {
+        border: 1px solid $color-border;
+    }
+    &_colored {
+        border: 1px solid $color-border;
+    }
+}
