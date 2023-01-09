@@ -6,15 +6,19 @@
 
 @import "base/base";
 @import "base/buttons";
+@import "base/logo";
 @import "base/icons";
+@import "base/tags";
 
 @import "layouts/wrapper";
+@import "layouts/columns";
 
 @import "components/contact-us";
 @import "components/header";
 @import "components/navigation";
 @import "components/promo";
 @import "components/tools";
-
-@import "base/logo";
+@import "components/strategies";
+@import "components/about-us";
+@import "components/footer";
 

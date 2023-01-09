@@ -1,0 +1,28 @@
+.footer {
+    padding: 60px 0 70px;
+    &__wrapper {
+        display: flex;
+        // justify-content: space-between;
+        // align-items: flex-start;
+    }
+    &-navigation {
+        flex-grow: 1;
+        padding-left: 152px;
+        &__title {
+            margin: 0 0 15px;
+        }
+        &__links {
+            list-style: none;
+            padding-left: 0;
+            @extend %font-add;
+            @include font($weight:400, $height:3.5rem, $size:1.6rem);
+            a {
+                text-decoration: none;
+                color: $color-text;
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}

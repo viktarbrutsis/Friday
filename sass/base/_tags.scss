@@ -1,0 +1,28 @@
+.strategies {
+    &__tags {
+        margin-bottom: 31px;
+        display: flex;
+        .tag {
+            margin-right: 7px;
+            border-radius: 90px;
+            padding: 0 14px;
+            @include font($weight:400, $size:1.3rem, $height:2.8rem);
+            &:last-child {
+                margin-right: 0;
+            }
+            &_selected {
+                background: $color-primary;
+                color: $color-light;
+            }
+            &_bordered {
+                color: #544837;
+                border: 1px solid $color-border;
+            }
+            &_colored {
+                background: $color-tag;
+                border-radius: 90px;
+                color: $color-text;
+            }
+        }
+    }
+}
